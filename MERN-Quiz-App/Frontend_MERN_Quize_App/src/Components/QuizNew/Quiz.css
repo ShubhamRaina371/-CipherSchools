@@ -1,0 +1,129 @@
+/* Main container styles */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f2937; /* Dark background color */
+  color: #e5e7eb; /* Light text color */
+  padding: 2rem;
+}
+
+/* Card styles */
+.quiz-card {
+  background-color: #374151; /* Darker gray for the card */
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Header styles */
+.quiz-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.quiz-info {
+  flex-grow: 1;
+}
+
+.question-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  color: #e5e7eb;
+}
+
+.attempt-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0f172a; /* Dark blue-gray for attempt info */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.attempted-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Options list styles */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-item {
+  background-color: #4b5563; /* Slightly lighter gray for options */
+  border: 1px solid #6b7280; /* Border color */
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.option-item.selected {
+  background-color: #34d399; /* Teal color for selected option */
+  border-color: #059669; /* Darker teal border color */
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.btn-skip,
+.btn-submit,
+.btn-result {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-skip {
+  background-color: #3b82f6; /* Blue color for skip button */
+}
+
+.btn-skip:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+.btn-submit {
+  background-color: #2563eb; /* Blue color for submit button */
+}
+
+.btn-submit:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+.btn-result {
+  background-color: #10b981; /* Teal color for result button */
+}
+
+.btn-result:hover {
+  background-color: #059669; /* Darker teal on hover */
+}
